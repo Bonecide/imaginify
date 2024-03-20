@@ -6,11 +6,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import { Button } from "../ui/button";
-
+import { motion } from "framer-motion";
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <aside className="sidebar">
+    <motion.aside
+      initial={{
+        x: -300,
+      }}
+      animate={{
+        x: 0,
+      }}
+      exit={{
+        x: -300,
+      }}
+      className="sidebar"
+    >
       <div className="flex size-full flex-col gap-4">
         <Link href="/" className="sidebar-logo">
           <Image
@@ -88,7 +99,7 @@ const Sidebar = () => {
           </SignedOut>
         </nav>
       </div>
-    </aside>
+    </motion.aside>
   );
 };
 

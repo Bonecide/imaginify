@@ -180,6 +180,12 @@ export const aspectRatioOptions = {
     width: 1000,
     height: 1778,
   },
+  "5:7": {
+    aspectRatio: "5:7",
+    label: "A4 (5:7)",
+    width: 500,
+    height: 700,
+  },
 };
 
 export const defaultValues = {

@@ -1,5 +1,7 @@
+import { PageWrapper } from "@/components/shared/PageWrapper";
+
 const CreditdPage = () => {
-  return <div>Credit Page</div>;
+  return <PageWrapper>Credit Page</PageWrapper>;
 };
 
 export default CreditdPage;

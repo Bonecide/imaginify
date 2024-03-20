@@ -1,5 +1,7 @@
+import { PageWrapper } from "@/components/shared/PageWrapper";
+
 const ProfilePage = () => {
-  return <div>ProfilePage</div>;
+  return <PageWrapper>ProfilePage</PageWrapper>;
 };
 
 export default ProfilePage;
